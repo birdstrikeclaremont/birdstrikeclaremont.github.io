@@ -12,9 +12,34 @@
             background-color: #f0f4f8; /* Softer light blue */
         }
 
+        .navbar {
+            background-color: #002147; /* Dark navy blue */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            position: fixed; /* Fixed at the top */
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a modern look */
+            z-index: 1000; /* Ensure the menu is on top of other elements */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 100px auto 40px; /* Adjusted top margin for the fixed navbar */
             background-color: white; /* White background for content area */
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a modern look */
@@ -53,13 +78,6 @@
 
         .content p {
             margin-bottom: 20px;
-        }
-
-        .content em {
-            display: block;
-            margin-top: 20px;
-            font-style: italic;
-            color: #777; /* Lighter grey for the source text */
         }
 
         .bold {
@@ -115,10 +133,6 @@
             font-size: 18px;
         }
 
-        .additional-content .bold {
-            font-weight: bold;
-        }
-
         .additional-content p span:first-of-type {
             font-weight: bold;
             color: #002147; /* Navy blue for emphasis */
@@ -138,10 +152,21 @@
             width: 50%; /* Adjusted width for the image */
         }
 
+        /* Scroll behavior for smooth navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="container" id="home">
         <div class="banner">
             Bird Strike Claremont Colleges
         </div>
@@ -154,9 +179,12 @@
             </p>
             <p>
                 Window collisions are responsible for over three billion bird deaths each year. This kills approximately <span class="bold">six percent</span> of the global population of our feathered friends.
+            </p>
         </div>
     </div>
-    <div class="additional-content">
+
+    <!-- Resources Section -->
+    <div class="additional-content" id="resources">
         <h2>What can we do at the 5C's and at home to mitigate bird casualties?</h2>
         <p>
             <span>Firstly,</span> help our 5C scientists by reporting any downed birds you see around campus. Click the <span class="bold" style="color: #800020;">red button</span> on the right-hand side to fill out a quick form. This gives us <span class="bold">crucial</span> information about potential problem spots on our campus!
@@ -167,15 +195,4 @@
         <p>
             <span>Secondly,</span> simple and easy to apply patterns can break up the reflections on windows that confuse birds. This can be as simple as adding a window screen or some reflective tape, or as creative as painting bird-saving designs to liven up your home. It is important that these modifications are added to the outside of the glass... sadly decals on the inside will not help our feathery friends.
         </p>
-        <img class="image-logo" src="https://i0.wp.com/kimsmithdesigns.com/wp-content/uploads/2023/04/unnamed-2.jpg?ssl=1" alt="Bird-Saving Logo">
-        <p>
-            <span>Lastly,</span> one simple thing is to turn the lights off at night. 80% of birds migrate at night and can be dragged off course and into danger by light pollution. Turn off your lights, especially during the migration season. Lights Out for birds movements operate in numerous U.S. cities, saving energy, money, and, of course, our birds.
-        </p>
-    </div>
-    <div class="button-container">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSei4k2XR0Cy22P2BCsNyokR2PCcYEZxNQezirfHA5kPrZqHxw/viewform?usp=sf_link" class="button">
-            Report a Bird Strike
-        </a>
-    </div>
-</body>
-</html>
+        <img class="image-logo" src="https://i0.wp.com/kimsmithdesigns.com/wp-content/uploads/2023/04/unnamed-2.jpg?ssl=1" alt="Bird-Saving Logo
