@@ -62,6 +62,10 @@
             color: #777; /* Lighter grey for the source text */
         }
 
+        .bold {
+            font-weight: bold;
+        }
+
         .button-container {
             text-align: center; /* Center the button */
             margin-top: 30px;
@@ -79,6 +83,10 @@
             border-radius: 30px; /* Rounded button for a sleek look */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for the button */
             transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+            position: fixed; /* Fix the button in place */
+            bottom: 20px; /* Distance from the bottom of the viewport */
+            right: 20px; /* Distance from the right of the viewport */
+            z-index: 1000; /* Ensure the button is on top of other elements */
         }
 
         .button:hover {
@@ -101,16 +109,18 @@
                 For birds, glass windows are worse than invisible. By reflecting foliage or sky, they look like inviting places to fly into. And because the sheer number of windows is so great, their toll on birds is huge. Up to about 1 billion birds die from window strikes in the U.S. each year, according to a 2014 study.
             </p>
             <p>
-                What happens to birds that hit windows? Sadly, the bird often dies, even when it is only temporarily stunned and manages to fly away. Many times these birds die later from internal bleeding or bruising, especially on the brain.
+                Window collisions are responsible for over three billion bird deaths each year, killing approximately <span class="bold">six percent</span> of the global population of our feathered friends.
+            </p>
+            <p>
+                What happens to birds that hit windows? Sadly, the bird often dies, even when it is only temporarily stunned and manages to fly away.
             </p>
             <em>Source: Cornell Lab</em>
-
-            <div class="button-container">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSei4k2XR0Cy22P2BCsNyokR2PCcYEZxNQezirfHA5kPrZqHxw/viewform?usp=sf_link" class="button">
-                    Report a Bird Strike
-                </a>
-            </div>
         </div>
+    </div>
+    <div class="button-container">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSei4k2XR0Cy22P2BCsNyokR2PCcYEZxNQezirfHA5kPrZqHxw/viewform?usp=sf_link" class="button">
+            Report a Bird Strike
+        </a>
     </div>
 </body>
 </html>
