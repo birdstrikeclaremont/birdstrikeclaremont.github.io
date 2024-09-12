@@ -37,6 +37,7 @@
             color: #333; /* Dark grey text for better readability */
             font-size: 18px;
             line-height: 1.8;
+            text-align: center; /* Center text and image */
         }
 
         .content p {
@@ -51,7 +52,7 @@
         }
 
         .button-container {
-            text-align: center; /* Ensure button is centered */
+            text-align: center; /* Center the button */
             margin-top: 30px;
         }
 
@@ -74,6 +75,17 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
         }
 
+        .image-container {
+            text-align: center; /* Center the image */
+            margin: 20px 0; /* Spacing around the image */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Responsive image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners for the image */
+        }
+
     </style>
 </head>
 <body>
@@ -82,6 +94,9 @@
             Bird Strike Claremont Colleges
         </div>
         <div class="content">
+            <div class="image-container">
+                <img src="https://example.com/path/to/image.jpg" alt="Bird flying into window">
+            </div>
             <p>
                 For birds, glass windows are worse than invisible. By reflecting foliage or sky, they look like inviting places to fly into. And because the sheer number of windows is so great, their toll on birds is huge. Up to about 1 billion birds die from window strikes in the U.S. each year, according to a 2014 study.
             </p>
@@ -91,7 +106,7 @@
             <em>Source: Cornell Lab</em>
 
             <div class="button-container">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSei4k2XR0Cy22P2BCsNyokR2PCcYEZxNQezirfHA5kPrZqHxw/viewform?usp=sf_link" class="button" target="_blank">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSei4k2XR0Cy22P2BCsNyokR2PCcYEZxNQezirfHA5kPrZqHxw/viewform?usp=sf_link" class="button">
                     Report a Bird Strike
                 </a>
             </div>
